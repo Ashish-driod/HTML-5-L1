@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Assignment 4 TRENDNXT HTML5</title>
+  <h1 style="text-align: center;">Board of Control for Cricket in India</h1><br><br>
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+
+      title:{
+      text: "Match Statistics"
+      },
+       data: [
+      {
+        type: "line",
+
+        dataPoints: [
+        { x: 5, y: 40 },
+        { x: 10, y: 75 },
+        { x: 15, y: 140 }
+       
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+ <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script></head>
+<body>
+  <div id="chartContainer" style="height: 300px; width: 50%;">
+  </div>
+</body>
+</html>

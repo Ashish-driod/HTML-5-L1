@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 3 : TrendNxt HTML5 L1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+         
+	h1{
+		color: black;
+		font-size: 50px;
+		text-align:center;
+	}
+	.logo{
+		text-align:center;
+	}
+	
+	
+	img{
+		width: 250px;
+		height:200px;
+	}
+
+   	 #live {
+                margin: 0 auto;
+                text-align: center;
+            }
+            video {
+                display: block;
+                margin: 10px auto;
+                width: 100%;
+                max-width: 480px;
+		border : 2 px solid black;
+            }
+            button {
+  		background-color: #4CAF50; /* Green */
+  		border: none;
+  		color: white;
+  		padding: 15px 32px;
+  		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+  		font-size: 16px;
+  		cursor: pointer;
+  		margin-left : 330px;
+		margin-right:0px;
+
+
+}
+
+	
+        </style>
+    </head>
+
+    <body>
+        <div class="logo">
+ 		         
+            <h1>Awesome Online Videos</h1>
+		 <img src = Wipro_logo.png>
+        </div>
+
+        <div id="live" class="video">
+            <video id="video" width="480">
+                <source src="vid.mp4" type="video/mp4">
+            </video>
+            
+        </div>
+	
+	<button onclick="play()">Play Video</button>
+        <button onclick="pause()">Pause Video</button>
+    </body>
+
+    <script>
+        var video = document.getElementById('video');
+        function play() {
+            video.play();
+        }
+
+        function pause() {
+            video.pause();
+        }
+    </script>
+</html>
